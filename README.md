@@ -1,55 +1,49 @@
-AI-Powered OCR & Translator
-This AI-powered application extracts text from images using Optical Character Recognition (OCR) and translates the extracted text into multiple languages. It features a user-friendly interface with a cropping tool, multi-language OCR, and an integrated translation system.
+# AI-Powered OCR & Translator
 
-Features
-Upload an image for text extraction.
-Crop the image to focus on the text area.
-Supports multiple languages for OCR including English, French, Spanish, German, Chinese, Hindi, Arabic, and Marathi.
-Translate extracted text into multiple languages.
-User-friendly interface with Streamlit.
-Installation
-Clone the Repository
-git clone https://github.com/your-username/ocr-translator.git
-cd ocr-translator
+## Overview
+This AI-powered application extracts text from images using Optical Character Recognition (OCR) and translates it into multiple languages using deep learning models. The system provides a user-friendly interface built with Streamlit, allowing users to upload images, crop selected text areas, and translate extracted text instantly.
 
-Set Up a Virtual Environment (Optional but Recommended)
-python -m venv venv
-source venv/bin/activate # On macOS/Linux
-venv\Scripts\activate # On Windows
+## Features
+- **Upload Images**: Supports PNG, JPG, and JPEG formats.
+- **Crop Image**: Select a specific text area for OCR processing.
+- **OCR Extraction**: Uses Tesseract OCR for text recognition.
+- **Multi-language Translation**: Translate extracted text into various languages including English, French, Spanish, German, Chinese, Hindi, Arabic, and Marathi.
+- **Streamlit UI**: Responsive and visually appealing interface.
 
-Install Dependencies
-pip install -r requirements.txt
+## Installation
 
-Install Tesseract OCR
-You need to install Tesseract OCR separately.
+### Prerequisites
+Ensure you have Python installed (>=3.7). Install the required dependencies using the command below:
+```bash
+pip install streamlit pytesseract pillow opencv-python numpy deep-translator streamlit-cropper
+```
 
-Windows
-Download and install from https://github.com/UB-Mannheim/tesseract/wiki
-Then, add the Tesseract installation path to your system environment variables.
-
-Linux
-sudo apt install tesseract-ocr
-
-macOS
-brew install tesseract
-
-Running the Application
-After installation, run the Streamlit app using
+### Run the Application
+```bash
 streamlit run app.py
+```
 
-How to Use
-Upload an Image by clicking the upload button and selecting an image.
-Crop the Image using the cropping tool to select the text area.
-Extract Text where OCR will recognize the text from the cropped section.
-Translate by choosing target languages, and the app will translate the extracted text.
-Built With
-Streamlit for UI and interactivity
-Tesseract OCR for text extraction
-OpenCV and PIL for image processing
-Deep Translator for translation
+## Usage
+1. **Upload an Image**: Select an image containing text.
+2. **Crop the Image**: Use the cropping tool to define the text area.
+3. **Extract & Translate**: The application extracts text and translates it into the selected languages.
 
-License
-This project is licensed under the MIT License.
+## Technologies Used
+- **Streamlit**: Front-end framework for web-based applications.
+- **Tesseract OCR**: Optical Character Recognition for text extraction.
+- **OpenCV**: Image processing library.
+- **Deep Translator (Google Translator API)**: Multi-language translation support.
+- **PIL (Pillow)**: Image handling and manipulation.
 
+## Folder Structure
+```
+📂 OCR_Translator_App
+├── 📜 app.py  # Main Streamlit application script
+├── 📂 images  # Folder to store uploaded images
+├── 📜 requirements.txt  # Required dependencies
+└── 📜 README.md  # Project documentation
+```
 
+## License
+This project is open-source and available under the MIT License.
 
