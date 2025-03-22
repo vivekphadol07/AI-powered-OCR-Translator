@@ -18,7 +18,7 @@ https://youtu.be/uHcPseg2cPA
 ### Prerequisites
 Ensure you have Python installed (>=3.7). Install the required dependencies using the command below:
 ```bash
-pip install streamlit pytesseract pillow opencv-python numpy deep-translator streamlit-cropper
+pip install -r requirements.txt
 ```
 
 ### Run the Application
