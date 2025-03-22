@@ -10,6 +10,9 @@ This AI-powered application extracts text from images using Optical Character Re
 - **Multi-language Translation**: Translate extracted text into various languages including English, French, Spanish, German, Chinese, Hindi, Arabic, and Marathi.
 - **Streamlit UI**: Responsive and visually appealing interface.
 
+## Video of Project
+https://youtu.be/uHcPseg2cPA
+
 ## Installation
 
 ### Prerequisites
